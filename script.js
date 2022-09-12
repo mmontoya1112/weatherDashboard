@@ -8,17 +8,20 @@ let weather = {
             + this.apiKey
         )
             .then((response) => response.json())
-            .then((data) => console.log(data));
+            .then((data) => this.showWeather(data));
 
     },
     showWeather: function (data) {
         //getting data from the api
         const { name } = data;
         //getting data from the "weather" array in the api documentation
-        const { icon, description } = data.weather;
+        const { icon, description } = data.weather[0];
         //getting data from the "main" object in the api documentation
         const { temp, humidity } = data.main;
         //getting data from the "wind" object in the api documentation
         const { speed } = data.wind;
+        console.log(name, icon, description, temp, humidity, speed)
+        document.querySelector(".city").innerText = "Weather in " + name;
+        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
         }
 };
