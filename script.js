@@ -30,11 +30,11 @@ let weather = {
         document.querySelector(".wind").innerText = "wind speed " + speed + "km/hr";
         },
         search: function (){
-            this.fetchWeatherAPI(document.querySelector("searchBar").value);
+            this.fetchWeatherAPI(document.querySelector(".searchBar").value);
         }
 };
-
-document.querySelector(".searchBar").addEventListener("click", function() {
+//this gets the input from search bar when clicked
+document.querySelector(".search button").addEventListener("click", function() {
     weather.search();
 })
 
