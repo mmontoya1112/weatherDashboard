@@ -3,11 +3,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: rgb(53, 6, 6);
+    background:rgb(159, 137, 27);
 }
 
 .card {
-    background: rgb(162, 111, 111);
+    background:  rgb(221, 218, 16);
     padding: 1em;
     border-radius: 10px;
     width: 100%;
