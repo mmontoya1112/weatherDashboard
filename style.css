@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: rgb(53, 6, 6);
+}
+
+.card {
+    background: rgb(162, 111, 111);
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em;
+}
