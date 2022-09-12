@@ -3,11 +3,17 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background:rgb(159, 137, 27);
+    background: url(./assets/weather.image.avif)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(25, 17, 23);
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card {
-    background:  rgb(221, 218, 16);
     padding: 1em;
     border-radius: 10px;
     width: 100%;
