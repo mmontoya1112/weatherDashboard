@@ -21,12 +21,20 @@ let weather = {
         //getting data from the "wind" object in the api documentation
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
+        //selects from html to change to what the api is fetching 
         document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".description").innerText = "desciption: " + description;
         document.querySelector(".temperature").innerText = "temperature: " + temp + "°C";
         document.querySelector(".humidity").innerText = "humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "wind speed " + speed + "km/hr";
-
+        },
+        search: function (){
+            this.fetchWeatherAPI(document.querySelector("searchBar").value);
         }
 };
+
+document.querySelector(".searchBar").addEventListener("click", function() {
+    weather.search();
+})
+
