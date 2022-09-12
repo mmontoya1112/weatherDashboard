@@ -14,3 +14,9 @@ body {
     max-width: 500px;
     margin: 1em;
 }
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
